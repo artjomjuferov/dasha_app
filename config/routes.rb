@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   get '/:id/members' => 'application#members', as: :members
 
   get '/:id/workers' => 'application#workers', as: :workers
+
+  get '/:id/sponsors' => 'application#sponsors', as: :sponsors
+
   get '/:id/incomings' => 'application#incomings', as: :incomings
   get '/:id/outcomings' => 'application#outcomings', as: :outcomings
 end

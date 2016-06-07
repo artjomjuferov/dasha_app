@@ -31,5 +31,10 @@ class ApplicationController < ActionController::Base
     @workers = @event.workers
   end
 
+  def sponsors
+    @event = Event.find params[:id]
+    @sponsors = @event.sponsors
+  end
+
 
 end
