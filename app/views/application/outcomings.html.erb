@@ -1,4 +1,10 @@
-<% @outcomings.each do |x| %>
-  <%= x.sum %>
-  <%= x.object %>
-<% end %>
+<h3>Список расходов</h3>
+<br>
+<ol>
+  <% @outcomings.each do |x| %>
+  <li>
+    Сумма: <%= x.sum %> <br>
+    Объект: <%= x.object %>
+  </li>
+  <% end %>
+</ol>

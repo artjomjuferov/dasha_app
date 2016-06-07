@@ -7,8 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <%= nav_bar brand: "Главная", brand_link: '/'  %>
+  <div class="container">
+    <%= yield %>
+  </div>
 
-<%= yield %>
 
 </body>
 </html>

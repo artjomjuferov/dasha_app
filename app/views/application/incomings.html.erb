@@ -1,3 +1,9 @@
-<% @incomings.each do |x| %>
-  <%= x.sum %>
-<% end %>
+<h3>Список доходов</h3>
+<br>
+<ol>
+  <% @incomings.each do |x| %>
+  <li>
+    Сумма: <%= x.sum %> <br>
+  </li>
+  <% end %>
+</ol>

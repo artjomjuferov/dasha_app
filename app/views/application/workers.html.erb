@@ -1,5 +1,11 @@
-<% @workers.each do |x| %>
-  <%= x.fio %>
-  <%= x.phone %>
-  <%= x.role %>
-<% end %>
+<h3>Список работников</h3>
+<br>
+<ol>
+  <% @workers.each do |x| %>
+  <li>
+    ФИО: <%= x.fio %> <br>
+    Телефон: <%= x.phone %> <br>
+    Роль: <%= x.role %>
+  </li>
+  <% end %>
+</ol>

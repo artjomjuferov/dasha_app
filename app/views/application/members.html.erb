@@ -1,4 +1,10 @@
-<% @members.each do |x| %>
-  <%= x.fio %>
-  <%= x.phone %>
-<% end %>
+<h3>Список участников</h3>
+<br>
+<ol>
+  <% @members.each do |x| %>
+  <li>
+    ФИО: <%= x.fio %> <br>
+    Телефон: <%= x.phone %> <br>
+  </li>
+  <% end %>
+</ol>
