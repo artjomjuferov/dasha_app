@@ -1,3 +1,7 @@
+<%= @event.title %>
+<%= @event.date %>
+<%= @event.place.try :name %>
+
 <%= link_to "Работники", workers_path(@event) %>
 <br>
 <%= link_to "Участники", members_path(@event) %>
