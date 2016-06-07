@@ -1,4 +1,10 @@
-<% @sponsors.each do |x| %>
-  <%= x.fio %>
-  <%= x.phone %>
-<% end %>
+<h3>Список спонсоров</h3>
+<br>
+<ol>
+  <% @sponsors.each do |x| %>
+  <li>
+    Название компании: <%= x.company_name %> <br>
+    Телефон: <%= x.phone %>
+  </li>
+  <% end %>
+</ol>

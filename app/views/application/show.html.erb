@@ -1,13 +1,18 @@
-<%= @event.title %>
-<%= @event.date %>
-<%= @event.place.try :name %>
+<h2><%= @event.title %></h2>
+<h4>
+  Место события:
+  <%= @event.place.try :name %>
+</h4>
+<h4>
+  Время события:
+  <%= @event.date %>
+</h4>
 
-<%= link_to "Работники", workers_path(@event) %>
-<br>
-<%= link_to "Участники", members_path(@event) %>
-<br>
-<%= link_to "Доходы", incomings_path(@event) %>
-<br>
-<%= link_to "Расходы", outcomings_path(@event) %>
-<br>
-<%= link_to "Спонсоры", sponsors_path(@event) %>
+<h3>Детальная информация</h3>
+<ul>
+  <li><%= link_to "Работники", workers_path(@event) %></li>
+  <li><%= link_to "Участники", members_path(@event) %></li>
+  <li><%= link_to "Доходы", incomings_path(@event) %></li>
+  <li><%= link_to "Расходы", outcomings_path(@event) %></li>
+  <li><%= link_to "Спонсоры", sponsors_path(@event) %></li>
+</ul>
