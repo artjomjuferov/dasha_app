@@ -1,9 +1,0 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  phone: MyString
-  fio: MyString
-
-two:
-  phone: MyString
-  fio: MyString
